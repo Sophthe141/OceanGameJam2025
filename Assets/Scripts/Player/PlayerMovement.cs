@@ -1,61 +1,82 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
-{  
+{
     private Rigidbody2D rb;
-    public bool isDriving = false;
-     public Animator animator;
-
+    public Animator animator;
+    private bool isJumping = false;
     public float speed = 7f;
+    public float jumpForce = 10f; // Acts as upward swim force in water
     public Vector2 totalMovement;
- 
 
     private SpriteRenderer spriteRenderer;
-    private void Awake() {
-       rb = GetComponent<Rigidbody2D>(); 
-       spriteRenderer = GetComponent<SpriteRenderer>();
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    // Start is called before the first frame update
+
     public void SetMovement(InputAction.CallbackContext value)
-    { 
-        
+    {
         totalMovement = value.ReadValue<Vector2>().normalized;
-        
-
+        if(!isJumping)
+        rb.velocity = new Vector2(speed * totalMovement.x, rb.velocity.y);
+        Debug.Log("Velovity Y:"+rb.velocity.y);
     }
 
-    // Update is called once per frame
+    public void JumpMoviment(InputAction.CallbackContext value)
+    {
+        if (!DialogueManager.instance.dialogueIsPlaying && !PauseSystem.GameIsPaused)
+            {
+        if(value.phase == InputActionPhase.Started)
+        {
+                isJumping = true;
+                //rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+                rb.velocity = new Vector2(rb.velocity.x , jumpForce);
+        }
+        if (value.phase == InputActionPhase.Performed)
+        {
+            
+                Debug.Log("HOLDING JUMP");
+            
+        }
+        if(value.phase == InputActionPhase.Canceled)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            isJumping = false;
+        }
+        }
+    }
+
     void Update()
     {
-        if(DialogueManager.instance.dialogueIsPlaying || PauseSystem.GameIsPaused)
+        if (DialogueManager.instance.dialogueIsPlaying || PauseSystem.GameIsPaused)
         {
-            totalMovement = new Vector2(0,0);
-            rb.velocity = new Vector2(0,0);
-            animator.SetFloat("Speed", 0);    
-            return; 
-        }else{
-            move();
+            totalMovement = Vector2.zero;
+            rb.velocity = Vector2.zero;
+            animator.SetFloat("Speed", 0);
+            return;
         }
-           
-        
-       
+        move();
     }
 
     void move()
     {
-        
-        if(totalMovement.x < 0 ){
+        // Flip sprite based on horizontal movement direction
+        if (totalMovement.x < 0)
+        {
             spriteRenderer.flipX = true;
-        } else if(totalMovement.x > 0 ){
+        }
+        else if (totalMovement.x > 0)
+        {
             spriteRenderer.flipX = false;
         }
-        rb.velocity = new Vector2(speed * totalMovement.x, speed * totalMovement.y);
-        animator.SetFloat("Speed", Mathf.Abs(totalMovement.x)+Mathf.Abs(totalMovement.y));
+
+        // Allow movement in all directions with velocity adjustments
+        animator.SetFloat("Speed", Mathf.Abs(totalMovement.x) + Mathf.Abs(totalMovement.y));
         animator.SetFloat("InputX", totalMovement.x);
         animator.SetFloat("InputY", totalMovement.y);
-        
     }
 }
