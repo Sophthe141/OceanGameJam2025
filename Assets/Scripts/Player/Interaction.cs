@@ -23,12 +23,12 @@ public class Interaction : MonoBehaviour
 
     void FixedUpdate()
     {
-         this.isInteracting = InputManager.instance.isInteracting;
+
         if(isDetecting){
                 if(!hasDetected){
                     interactAnimation.SetActive(true);
                 }
-                if(isInteracting){
+                if(CheckInteraction()){
                     hasDetected = true;
                 }
             
@@ -37,7 +37,7 @@ public class Interaction : MonoBehaviour
             isDetecting = false;
         }
 
-        if(!DialogueManager.instance.dialogueIsPlaying && hasDetected && isInteracting){
+        if(!DialogueManager.instance.dialogueIsPlaying && hasDetected && CheckInteraction()){
             hasDetected = false;
             isInteracting = false;
         }
@@ -57,5 +57,10 @@ public class Interaction : MonoBehaviour
         if(other.CompareTag(detectionTag)){
             isDetecting = false;
         }
+    }
+
+    private bool CheckInteraction(){
+        isInteracting = InputManager.instance.isInteracting;
+        return isInteracting;
     }
 } 

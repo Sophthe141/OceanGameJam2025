@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
 {
     public  bool isInteracting;
     public static bool isInventoryOpen = false;
-    public static InputManager instance;
+    public static InputManager instance{get; private set;}
     public bool vehicleInAction;
     public bool isNextDialogue;
     // Start is called before the first frame update
