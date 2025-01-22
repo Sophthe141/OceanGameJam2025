@@ -98,15 +98,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""d0bfe5c7-1f85-4087-bccc-931da4286c71"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -120,6 +111,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""id"": ""3a5631e2-0f90-43c2-953d-c448cbe7092f"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
@@ -164,6 +166,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""id"": ""700460a6-6f8d-4988-a88e-1bc55afeff38"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
@@ -263,6 +276,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""id"": ""f7b25197-a0b1-4549-83b5-3be58fb5ece4"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""down"",
@@ -428,28 +452,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d24e01c2-3c5a-408f-acf1-2be13ba53f47"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a2d94210-f9ea-4e73-bb29-617aee1cdec6"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -466,7 +468,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Jogador_MenuInventoryInteraction = m_Jogador.FindAction("MenuInventoryInteraction", throwIfNotFound: true);
         m_Jogador_Pointer = m_Jogador.FindAction("Pointer", throwIfNotFound: true);
         m_Jogador_Click = m_Jogador.FindAction("Click", throwIfNotFound: true);
-        m_Jogador_Jump = m_Jogador.FindAction("Jump", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -541,7 +542,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Jogador_MenuInventoryInteraction;
     private readonly InputAction m_Jogador_Pointer;
     private readonly InputAction m_Jogador_Click;
-    private readonly InputAction m_Jogador_Jump;
     public struct JogadorActions
     {
         private @PlayerControls m_Wrapper;
@@ -554,7 +554,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @MenuInventoryInteraction => m_Wrapper.m_Jogador_MenuInventoryInteraction;
         public InputAction @Pointer => m_Wrapper.m_Jogador_Pointer;
         public InputAction @Click => m_Wrapper.m_Jogador_Click;
-        public InputAction @Jump => m_Wrapper.m_Jogador_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Jogador; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -588,9 +587,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Click.started += instance.OnClick;
             @Click.performed += instance.OnClick;
             @Click.canceled += instance.OnClick;
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IJogadorActions instance)
@@ -619,9 +615,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Click.started -= instance.OnClick;
             @Click.performed -= instance.OnClick;
             @Click.canceled -= instance.OnClick;
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IJogadorActions instance)
@@ -649,6 +642,5 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnMenuInventoryInteraction(InputAction.CallbackContext context);
         void OnPointer(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
     }
 }

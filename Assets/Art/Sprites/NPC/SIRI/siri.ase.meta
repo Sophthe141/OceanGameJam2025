@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86bc5a102db78644d9ebb52a48441e03
+guid: 3352a9a5dfccd4d4c9d9e80a9f7a1d80
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 512
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638730868860118474
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Bubble particle
+  - name: Frame_0
     originalName: 
-    pivot: {x: 0.42815673, y: -0.2767733}
+    pivot: {x: 0.5, y: -0.11052632}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 689
-      height: 719
-    spriteID: 319644a2254729d4680a5c503b974a2f
+      width: 176
+      height: 190
+    spriteID: 16ba24b8e2a79274fb46f7af995ace02
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,24 +141,82 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.23780487}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 4
+      width: 190
+      height: 164
+    spriteID: 6006016e37ffc904eb0f6bba4fb7ae38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 4}
+  - name: Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.28387097}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 176
+      width: 190
+      height: 155
+    spriteID: fbfe99477c752bd4598e2903ef75f996
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 176}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -2110947166
-    name: Bubble particle
+    guid: -1909575975
+    name: siri
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Bubble particle
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 217
-        y: 199
-        width: 689
-        height: 719
-      spriteId: 319644a2254729d4680a5c503b974a2f
+        x: 26
+        y: 21
+        width: 176
+        height: 190
+      spriteId: 16ba24b8e2a79274fb46f7af995ace02
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 39
+        width: 190
+        height: 164
+      spriteId: 6006016e37ffc904eb0f6bba4fb7ae38
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 44
+        width: 190
+        height: 155
+      spriteId: fbfe99477c752bd4598e2903ef75f996
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -174,31 +232,7 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 1024, y: 1024}
+  canvasSize: {x: 228, y: 256}
