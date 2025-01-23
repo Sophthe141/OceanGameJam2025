@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69e57fa7ada35f14099da1fba16db4db
+guid: 5292e38a69230a44583e15d6d28fb69d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 216
+    spritePixelsToUnits: 1024
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638709544759787321
+  platformSettingsDirtyTick: 638732468655762752
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: walk_costa_Frame_1
+  - name: Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -130,9 +130,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 216
-      height: 696
-    spriteID: ce150eff258641a409cf39df4281aaa0
+      width: 1943
+      height: 449
+    spriteID: 78d4f97c1dd94fe488aa6ff81542e47d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,7 +141,27 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: walk_costa_Frame_3
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1955
+      y: 4
+      width: 1943
+      height: 449
+    spriteID: 135953f6603650c41b352015e2e4468c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1955, y: 4}
+  - name: Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -149,10 +169,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 708
-      width: 216
-      height: 696
-    spriteID: 60d57e4e035100a4e8a0995d5851ea77
+      y: 461
+      width: 1943
+      height: 449
+    spriteID: 804edad48343de34f80cdaf924d27f3f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,19 +180,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 708}
-  - name: walk_costa_Frame_0
+    uvTransform: {x: 4, y: 461}
+  - name: Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 228
-      y: 4
-      width: 216
-      height: 696
-    spriteID: 375bdeb3aa4c815448e0d6d4430a46ba
+      x: 1955
+      y: 461
+      width: 1943
+      height: 449
+    spriteID: 387572baa28809c46938ab5e19ee1e58
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,19 +200,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 228, y: 4}
-  - name: walk_costa_Frame_2
+    uvTransform: {x: 1955, y: 461}
+  - name: Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 452
-      y: 708
-      width: 216
-      height: 690
-    spriteID: 5055d1760190e3a49ab9d24482940ecd
+      x: 4
+      y: 918
+      width: 1943
+      height: 449
+    spriteID: 3df0f4b79b92af642a2c9724f9fa3566
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,19 +220,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 452, y: 708}
-  - name: walk_costa_Frame_4
+    uvTransform: {x: 4, y: 918}
+  - name: Frame_5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 228
-      y: 708
-      width: 216
-      height: 696
-    spriteID: 6d662aa6a6ca18d4ab9e8e14bf0e74a5
+      x: 1955
+      y: 918
+      width: 1943
+      height: 449
+    spriteID: 23aabc0bc5d56b543857c2fef886bf77
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,19 +240,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 228, y: 708}
-  - name: walk_costa_Frame_5
+    uvTransform: {x: 1955, y: 918}
+  - name: Frame_6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 452
-      y: 4
-      width: 216
-      height: 696
-    spriteID: 03cf410305df5404b9694269060c7359
+      x: 4
+      y: 1375
+      width: 1943
+      height: 449
+    spriteID: 476a1e48c494910469832d54e269dbdd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,80 +260,188 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 452, y: 4}
+    uvTransform: {x: 4, y: 1375}
+  - name: Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1955
+      y: 1375
+      width: 1943
+      height: 449
+    spriteID: 4616b01b7e83bbd4098b59dd8d025a79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1955, y: 1375}
+  - name: Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1832
+      width: 1943
+      height: 449
+    spriteID: 2e744820e775ca543934abcaefb37298
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1832}
+  - name: Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1955
+      y: 1832
+      width: 1943
+      height: 449
+    spriteID: d84765d0455f67e4b973aab38753cc78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1955, y: 1832}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -914184720
-    name: walk_costa
+    guid: 885410266
+    name: Jare
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 261
-        y: 159
-        width: 216
-        height: 696
-      spriteId: ce150eff258641a409cf39df4281aaa0
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 261
-        y: 159
-        width: 216
-        height: 696
-      spriteId: 60d57e4e035100a4e8a0995d5851ea77
     - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 261
-        y: 159
-        width: 216
-        height: 696
-      spriteId: 375bdeb3aa4c815448e0d6d4430a46ba
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 78d4f97c1dd94fe488aa6ff81542e47d
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 135953f6603650c41b352015e2e4468c
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 261
-        y: 159
-        width: 216
-        height: 690
-      spriteId: 5055d1760190e3a49ab9d24482940ecd
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 804edad48343de34f80cdaf924d27f3f
+    - name: Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 387572baa28809c46938ab5e19ee1e58
     - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 261
-        y: 159
-        width: 216
-        height: 696
-      spriteId: 6d662aa6a6ca18d4ab9e8e14bf0e74a5
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 3df0f4b79b92af642a2c9724f9fa3566
     - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
-        x: 261
-        y: 159
-        width: 216
-        height: 696
-      spriteId: 03cf410305df5404b9694269060c7359
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 23aabc0bc5d56b543857c2fef886bf77
+    - name: Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 476a1e48c494910469832d54e269dbdd
+    - name: Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 4616b01b7e83bbd4098b59dd8d025a79
+    - name: Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: 2e744820e775ca543934abcaefb37298
+    - name: Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 294
+        width: 1943
+        height: 449
+      spriteId: d84765d0455f67e4b973aab38753cc78
     linkedCells: []
     parentIndex: -1
   platformSettings:
-  - name: DefaultTexturePlatform
+  - name: Default
     overridden: 0
     ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
@@ -325,19 +453,7 @@ ScriptedImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
@@ -346,4 +462,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 769, y: 1080}
+  canvasSize: {x: 2048, y: 1024}

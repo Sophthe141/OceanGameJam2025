@@ -1,0 +1,805 @@
+fileFormatVersion: 2
+guid: 1273816d95caa3240b9c14d25f6d2d02
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -156.25, y: -141.99997}
+        - {x: -245, y: -191.99997}
+        - {x: -256, y: -255.74997}
+        - {x: 256, y: -255.74997}
+        - {x: 256, y: -141.99997}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf8d289834d4a04f896df237e87005f
+      internalID: -559544417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: -141.99997}
+        - {x: -256, y: -255.74997}
+        - {x: 256, y: -255.74997}
+        - {x: 256, y: -141.99997}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e297b8181bbfcc948b43552351c746f5
+      internalID: -1177792462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 176.50002, y: -141.99997}
+        - {x: -255.99998, y: -141.99997}
+        - {x: -255.99998, y: -255.74997}
+        - {x: 256, y: -255.74997}
+        - {x: 255.25002, y: -219.49997}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654c2f12751c4744d951b0116098207a
+      internalID: -1633363890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -255.87494, y: 256}
+        - {x: -255.87494, y: -255.74997}
+        - {x: 256, y: -255.74997}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3bdf7cceb4ae648958b4c414fdba05
+      internalID: -1275590876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -255.74997, y: 256}
+        - {x: -255.74997, y: -255.74997}
+        - {x: 256, y: -255.74997}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32062b624c5f6a4abb6042df9bfb38c
+      internalID: 282557513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9117326bb338444a9e5875cb3a81e07
+      internalID: -1912359418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d3ccab791e2814b9b51adc14082860
+      internalID: -1740263040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_7
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 49.000015, y: -185.87494}
+        - {x: -195.99998, y: -182.12494}
+        - {x: -255.99998, y: -249.62494}
+        - {x: -255.99998, y: -255.87494}
+        - {x: 255.25002, y: -255.87494}
+        - {x: 255.25002, y: -253.37494}
+        - {x: 252.75002, y: -245.87494}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed1bfd1531c91b46b92cdbee2ba7ba9
+      internalID: 1125391576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_8
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 235.37506, y: -232.12494}
+        - {x: -3.374939, y: -134.62494}
+        - {x: -119.62494, y: -127.12494}
+        - {x: -255.87494, y: -249.62494}
+        - {x: -255.87494, y: -255.87494}
+        - {x: 256, y: -255.87494}
+        - {x: 256, y: -250.87494}
+        - {x: 254.12506, y: -245.87494}
+      - - {x: 252.87506, y: 256}
+        - {x: 254.12506, y: 254.12506}
+        - {x: 256, y: 254.12506}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6491807ef1c1d784ab271aafe5b3064d
+      internalID: 1496384997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_9
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 240, y: 255}
+        - {x: 166, y: 69}
+        - {x: 180, y: -194}
+        - {x: 216, y: -235}
+        - {x: 256, y: -255.87494}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583d785c06cec5746b658d395150ddae
+      internalID: 1146106698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -255.99998}
+        - {x: 256, y: -255.99998}
+        - {x: 256, y: -250.99998}
+        - {x: -103, y: -81}
+        - {x: -251.25, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26feae6e426903343a24d43201c4566d
+      internalID: -1098674895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 248.875, y: 256}
+        - {x: -54, y: -70}
+        - {x: -256, y: -250.99998}
+        - {x: -256, y: -255.99998}
+        - {x: 256, y: -255.99998}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbdd869c1c8a0a4c9d8d600a3d015c6
+      internalID: -1366604720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -31}
+        - {x: -245.99998, y: 256}
+        - {x: -255.99998, y: 256}
+        - {x: -255.99998, y: -255.99998}
+        - {x: 256, y: -255.99998}
+        - {x: 256, y: -252.24998}
+        - {x: 241.50002, y: -238.49998}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b2d40a1ebb35b45b71f6a94b7ded76
+      internalID: -916263720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_13
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -242.12494, y: 256}
+        - {x: -255.87494, y: 256}
+        - {x: -255.87494, y: -255.99998}
+        - {x: 256, y: -255.99998}
+        - {x: 178, y: -173}
+        - {x: 126.62506, y: 46.500015}
+        - {x: -19.624939, y: 131.50002}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebea9844a2d5aca41ac98a038d4746e1
+      internalID: 2027946945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_14
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 36, y: -212}
+        - {x: -27, y: -157}
+        - {x: -73, y: -199}
+        - {x: -255.74997, y: -255.99998}
+        - {x: 256, y: -255.99998}
+        - {x: 189, y: -221}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512e6023093c4e24b96bd0a86840c11e
+      internalID: -1210575208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e637b81bed9f9d4d8b704b69938c938
+      internalID: 1950011812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f00e254b9755204fafc9a1dafb48d6a
+      internalID: -2026579831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -128, y: 169}
+        - {x: -250.99998, y: 256}
+        - {x: -255.99998, y: 256}
+        - {x: -255.99998, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: -249.87498}
+        - {x: 120.250015, y: -28.624992}
+      - - {x: 247.75002, y: 256}
+        - {x: 249.00002, y: 253.875}
+        - {x: 254.00002, y: 253.875}
+        - {x: 256, y: 256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbfd3c679e17214c99ba9b36069fe0b
+      internalID: 454980627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_18
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 251.62506, y: 256}
+        - {x: -73.37494, y: -26.124992}
+        - {x: -255.87494, y: -248.62498}
+        - {x: -255.87494, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a34088dea1f7147be3cc4d0597c656
+      internalID: -1071785361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -255.74997, y: 256}
+        - {x: -255.74997, y: -256}
+        - {x: 256, y: -256}
+        - {x: -2, y: 75}
+      - - {x: 249.25003, y: 256}
+        - {x: 250.50003, y: 253.875}
+        - {x: 255.50003, y: 253.875}
+        - {x: 256, y: 255.125}
+        - {x: 256, y: 256}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5645d57c096204188f574e9e634809
+      internalID: -1799353430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 236.25}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 236.25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70860baf1674ba84b8211f12d9d0bfd9
+      internalID: 444810424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -256, y: 236.25}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 236.25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c8c7d718134a94a841268d95ddc297
+      internalID: -487375392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -255.99998, y: 236.25}
+        - {x: -255.99998, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 236.25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a8131e26c809742a83a45853c7316f
+      internalID: -215438808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_23
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 212.87506, y: 236.25}
+        - {x: 114.12506, y: 200}
+        - {x: -255.87494, y: 236.25}
+        - {x: -255.87494, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 236.25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c78ddda085d32459ead00231a66e81
+      internalID: -885429432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 171, y: 237}
+        - {x: 155, y: 213}
+        - {x: 64, y: 179}
+        - {x: -60, y: 188}
+        - {x: -205, y: 235}
+        - {x: -255.74997, y: 236.25}
+        - {x: -255.74997, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 236.25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bb129c5812cd04785e635bbab7329d
+      internalID: -1429646014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Terra_0: -559544417
+      Terra_1: -1177792462
+      Terra_10: -1098674895
+      Terra_11: -1366604720
+      Terra_12: -916263720
+      Terra_13: 2027946945
+      Terra_14: -1210575208
+      Terra_15: 1950011812
+      Terra_16: -2026579831
+      Terra_17: 454980627
+      Terra_18: -1071785361
+      Terra_19: -1799353430
+      Terra_2: -1633363890
+      Terra_20: 444810424
+      Terra_21: -487375392
+      Terra_22: -215438808
+      Terra_23: -885429432
+      Terra_24: -1429646014
+      Terra_3: -1275590876
+      Terra_4: 282557513
+      Terra_5: -1912359418
+      Terra_6: -1740263040
+      Terra_7: 1125391576
+      Terra_8: 1496384997
+      Terra_9: 1146106698
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

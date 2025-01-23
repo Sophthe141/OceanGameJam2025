@@ -49,16 +49,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.223
+    - _Alpha: 0.01
     - _Freq: 0.1
     - _NumberOfLines: 30
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Threshold: 0
     - _Tiling: 0.4
+    - _Totalmoviment: 0
+    - _freq: 0.2
     m_Colors:
     - _ColorContrastant: {r: 0.40606087, g: 0.6886792, b: 0.5788674, a: 0}
-    - _Color_Base: {r: 0.26808828, g: 0.6150943, b: 0.54878885, a: 0.2392157}
-    - _Color_Secondary: {r: 0.14057496, g: 0.42106938, b: 0.764151, a: 0}
+    - _Color_Base: {r: 0.26808825, g: 0.6150943, b: 0.5487888, a: 0.16862746}
+    - _Color_Secondary: {r: 0.14057493, g: 0.42106935, b: 0.764151, a: 0.13333334}
     - _Tiling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
