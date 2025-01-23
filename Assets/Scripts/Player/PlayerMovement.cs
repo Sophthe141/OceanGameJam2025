@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private Transform light2D;
-    private UnityEngine.Rendering.Universal.Light2D light; 
+
     public Animator animator;
-    private bool isJumping = false;
     public float speed = 7f;
     public float jumpForce = 10f; // Acts as upward swim force in water
     public Vector2 totalMovement;
