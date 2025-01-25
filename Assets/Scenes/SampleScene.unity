@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 158639019}
   m_Layer: 0
   m_Name: JareSprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84488,7 +84488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &853558762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91589,7 +91589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressLights: {fileID: 619394801}
   objectiveProgress: 0
-  maxProgress: 0
+  maxProgress: 3
 --- !u!1 &1608942063
 GameObject:
   m_ObjectHideFlags: 0
@@ -92102,7 +92102,6 @@ MonoBehaviour:
   jumpForce: 10
   totalMovement: {x: 1, y: 0}
   isDetectingPlayer: 0
-  pushForce: 5
 --- !u!1 &1667551951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7644908206388943345, guid: 1c9bcd6a2486f454c950e1fa270cf328, type: 3}
@@ -92739,6 +92738,10 @@ PrefabInstance:
     - target: {fileID: 3493253178187463736, guid: 7962c9eb242cf254593d7a98232bc18a, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493253178187463736, guid: 7962c9eb242cf254593d7a98232bc18a, type: 3}
+      propertyPath: pushForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3493253178187463736, guid: 7962c9eb242cf254593d7a98232bc18a, type: 3}
       propertyPath: lifeImages.Array.size

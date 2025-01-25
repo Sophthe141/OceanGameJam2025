@@ -9,6 +9,10 @@ public class Life : MonoBehaviour {
     [SerializeField] private int maxLives = 3; // Número máximo de vidas
     private int currentLives; // Vida atual do player
     public bool isDead = false; // Flag para verificar se o player está morto
+    public static Life instance;
+    private Rigidbody2D rb;
+    public float pushForce = 5f;
+    private SpriteRenderer spriteRenderer;
     void Start() {
         // Inicializar variáveis
         currentLives = 3; // Carregue a vida do player do PlayerPrefs (ou defina um valor inicial)
@@ -20,12 +24,13 @@ public class Life : MonoBehaviour {
             }
         }
 
+        rb = this.GetComponent<Rigidbody2D>();
+
         UpdateLifeHUD();
     }
 
     void Update() {
         UpdateLifeHUD();
-
     }
 
     void UpdateLifeHUD() {
@@ -49,10 +54,14 @@ public class Life : MonoBehaviour {
         UpdateLifeHUD();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-       /* if (collision.CompareTag("Enemy")) {
+    private void OnTriggerEnter2D(Collider2D other) {
+       if (other.CompareTag("Enemy")) {
+            Vector2 pushDirection = (transform.position - other.transform.position).normalized;
+            rb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
             RemoveLife();
-            tookDamage = true;
-        }*/
+            
+        }
     }
+    
+
 }

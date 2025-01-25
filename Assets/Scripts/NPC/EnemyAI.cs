@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private bool isDetectingPlayer;
     private SpriteRenderer spriteRenderer;
-    public float pushForce = 5f;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -75,12 +75,12 @@ public class EnemyAI : MonoBehaviour
         }
 
         if(angle == 90 || angle == -90){
-            transform.rotation = Quaternion.Euler(Vector3.forward * (angle - 1f));
+            transform.rotation = Quaternion.Euler(Vector3.forward * (angle - 10f));
         }else{
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
         
-        Debug.Log("Angle: " + angle);
+        //Debug.Log("Angle: " + angle);
         rb.velocity =  totalMovement * speed;
     }
 
@@ -91,12 +91,6 @@ public class EnemyAI : MonoBehaviour
         {
             isDetectingPlayer = true;
             SetMovement(other.transform);
-
-            Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
-            if(playerRb != null){
-                Vector2 pushDirection = (other.transform.position - transform.position).normalized;
-                playerRb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
-            }
         }
         else
         {
