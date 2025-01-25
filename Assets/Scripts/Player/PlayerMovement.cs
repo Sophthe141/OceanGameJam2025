@@ -51,16 +51,13 @@ public class PlayerMovement : MonoBehaviour
         
         if (totalMovement.x < 0)
         {
-            
-            
-            light2D.rotation = Quaternion.Euler(new Vector3(0, 0, -180));
-            spriteRenderer.flipX = true;
+            light2D.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            spriteRenderer.flipX = false;
         }
         else if (totalMovement.x > 0)
         {
-            
-            light2D.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-            spriteRenderer.flipX = false;
+            light2D.rotation = Quaternion.Euler(new Vector3(0, 0, -180));
+            spriteRenderer.flipX = true;
         }
 
         
