@@ -56,12 +56,17 @@ public class Life : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
        if (other.CompareTag("Enemy")) {
-            Vector2 pushDirection = (transform.position - other.transform.position).normalized;
-            rb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+            
             RemoveLife();
             
         }
     }
-    
+
+    private void OnTriggerStay2D(Collider2D other) {
+        if (other.CompareTag("Enemy")) {
+            Vector2 pushDirection = (transform.position - other.transform.position).normalized;
+            rb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+        }
+    }
 
 }
