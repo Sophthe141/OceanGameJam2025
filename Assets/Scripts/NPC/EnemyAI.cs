@@ -20,12 +20,13 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         foreach (Transform child in transform)
         {
-            //if (child.GetComponent<SpriteRenderer>() != null && spriteRenderer == null)
-            //{
+            
+            if (child.GetComponent<SpriteRenderer>() != null && spriteRenderer == null)
+            {
 
             spriteRenderer = child.GetComponent<SpriteRenderer>();
 
-            // }
+            }
         }
     }
 
@@ -53,6 +54,7 @@ public class EnemyAI : MonoBehaviour
         }
 
         Vector2 DistanceCalculated = targetTransform.position - transform.position;
+        Debug.Log("Distance: " + DistanceCalculated);
         move(Mathf.Atan2(DistanceCalculated.y, DistanceCalculated.x) * Mathf.Rad2Deg);
         
     }
@@ -78,7 +80,8 @@ public class EnemyAI : MonoBehaviour
         }
 
         if(angle == 90 || angle == -90){
-            transform.rotation = Quaternion.Euler(Vector3.forward * (angle - 1f));
+            transform.rotation = Quaternion.Euler(Vector3.forward * (angle - 10f));
+            
         }else{
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
