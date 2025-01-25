@@ -40,8 +40,8 @@ public class ObjectiveControl : MonoBehaviour
         if (other.CompareTag("Bubble") && ObjectiveProgress < MaxProgress)
         {
             isCollidingWithBubble = true;
-            ObjectiveProgress++;
             other.gameObject.SetActive(false);
+            ObjectiveProgress++;
             progressText.text = string.Format("Bolhas {0}/{1}", ObjectiveProgress, MaxProgress);
             ObjectiveEvent.Invoke();
         }
