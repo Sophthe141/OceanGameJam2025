@@ -8,7 +8,8 @@ public enum SoundType{
     WALK,
     SHOOT,
     HURT,
-    FOOTSTEP
+    FOOTSTEP,
+    THEME
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour
