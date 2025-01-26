@@ -98,6 +98,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""4d6295a7-0a8f-4650-ba9d-c73d8023712b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -452,6 +461,39 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0cd2d38d-e381-40ab-9d6b-1f61b3842b4c"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce9ed5ae-bf5d-4e28-b44b-863fa394cfe3"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9636b011-04fd-46a6-a259-0723a8d3608e"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -468,6 +510,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Jogador_MenuInventoryInteraction = m_Jogador.FindAction("MenuInventoryInteraction", throwIfNotFound: true);
         m_Jogador_Pointer = m_Jogador.FindAction("Pointer", throwIfNotFound: true);
         m_Jogador_Click = m_Jogador.FindAction("Click", throwIfNotFound: true);
+        m_Jogador_Attack = m_Jogador.FindAction("Attack", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -542,6 +585,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Jogador_MenuInventoryInteraction;
     private readonly InputAction m_Jogador_Pointer;
     private readonly InputAction m_Jogador_Click;
+    private readonly InputAction m_Jogador_Attack;
     public struct JogadorActions
     {
         private @PlayerControls m_Wrapper;
@@ -554,6 +598,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @MenuInventoryInteraction => m_Wrapper.m_Jogador_MenuInventoryInteraction;
         public InputAction @Pointer => m_Wrapper.m_Jogador_Pointer;
         public InputAction @Click => m_Wrapper.m_Jogador_Click;
+        public InputAction @Attack => m_Wrapper.m_Jogador_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Jogador; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -587,6 +632,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Click.started += instance.OnClick;
             @Click.performed += instance.OnClick;
             @Click.canceled += instance.OnClick;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
         }
 
         private void UnregisterCallbacks(IJogadorActions instance)
@@ -615,6 +663,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Click.started -= instance.OnClick;
             @Click.performed -= instance.OnClick;
             @Click.canceled -= instance.OnClick;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
         }
 
         public void RemoveCallbacks(IJogadorActions instance)
@@ -642,5 +693,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnMenuInventoryInteraction(InputAction.CallbackContext context);
         void OnPointer(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
 }

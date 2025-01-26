@@ -13,6 +13,7 @@ public class Life : MonoBehaviour {
     private Rigidbody2D rb;
     public float pushForce = 5f;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
     void Start() {
         // Inicializar variáveis
         currentLives = 3; // Carregue a vida do player do PlayerPrefs (ou defina um valor inicial)
@@ -23,15 +24,12 @@ public class Life : MonoBehaviour {
                 lifeImages.Add(image);
             }
         }
-
+        animator = GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody2D>();
 
         UpdateLifeHUD();
     }
 
-    void Update() {
-        UpdateLifeHUD();
-    }
 
     void UpdateLifeHUD() {
         // Mostrar/desativar imagens de acordo com a vida atual
@@ -42,6 +40,7 @@ public class Life : MonoBehaviour {
                 lifeImages[i].enabled = false;
             }
         }
+        
     }
 
     public void AddLife() {
@@ -51,6 +50,7 @@ public class Life : MonoBehaviour {
 
     public void RemoveLife() {
         currentLives = Mathf.Max(currentLives - 1, 0);
+        animator.Play("Damage");
         UpdateLifeHUD();
     }
 
@@ -67,6 +67,12 @@ public class Life : MonoBehaviour {
             Vector2 pushDirection = (transform.position - other.transform.position).normalized;
             rb.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) {
+        
+           
+        
     }
 
 }

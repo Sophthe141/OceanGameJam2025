@@ -10,6 +10,8 @@ public class InputManager : MonoBehaviour
     public static InputManager instance{get; private set;}
     public bool vehicleInAction;
     public bool isNextDialogue;
+
+    public bool isUsingPower = false;
     // Start is called before the first frame update
     
 
@@ -44,6 +46,20 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public void UsePower(InputAction.CallbackContext value)
+    {
+        if(!PauseSystem.GameIsPaused){
+        if (value.phase == InputActionPhase.Performed)
+        {
+            isUsingPower = true;
+        }
+        if (value.phase == InputActionPhase.Canceled)
+        {
+            isUsingPower = false;
+        }
+        }
+    }
+    
     public void nextDialogue(InputAction.CallbackContext value)
     {
         if(!PauseSystem.GameIsPaused){
