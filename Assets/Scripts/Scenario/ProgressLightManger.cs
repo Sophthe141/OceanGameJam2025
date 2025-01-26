@@ -9,11 +9,19 @@ public class ProgressLightManger : MonoBehaviour
     [SerializeField] private float objectiveProgress;
     [SerializeField] private float maxProgress;
     // Start is called before the first frame update
+    public GameObject VictoryBar;
     void Start()
     {
         progressLights.intensity = 0.01f;
         objectiveProgress = 0;
+        VictoryBar.SetActive(false);
         
+    }
+
+    void Update(){
+        if (objectiveProgress == maxProgress){
+            VictoryBar.SetActive(true);
+        }
     }
     
     // Update is called once per frame
