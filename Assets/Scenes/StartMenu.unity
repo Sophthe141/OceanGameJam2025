@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LUCAS DIAS
+  m_text: LUCAS DIAS/lcxdias
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9a1d63aa32874d048b204ff0d60b181c, type: 2}
   m_sharedMaterial: {fileID: 8554848861952422710, guid: 9a1d63aa32874d048b204ff0d60b181c, type: 2}
