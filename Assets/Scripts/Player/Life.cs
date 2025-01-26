@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class Life : MonoBehaviour {
 
     [Header("Life Settings")]
     [SerializeField] private List<Image> lifeImages; // Lista de imagens da HUD de vida
     [SerializeField] private int maxLives = 3; // Número máximo de vidas
     private int currentLives; // Vida atual do player
-    public bool isDead = false; // Flag para verificar se o player está morto
+    public static bool isDead = false; // Flag para verificar se o player está morto
     public static Life instance;
     private Rigidbody2D rb;
     public float pushForce = 5f;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
+    public UnityEvent onPlayerDeath;
     void Start() {
         // Inicializar variáveis
         currentLives = 3; // Carregue a vida do player do PlayerPrefs (ou defina um valor inicial)
@@ -40,7 +43,12 @@ public class Life : MonoBehaviour {
                 lifeImages[i].enabled = false;
             }
         }
-        
+        if(currentLives == 0)
+        {
+            isDead = true;
+            animator.Play("Death");
+            onPlayerDeath.Invoke();
+        }
     }
 
     public void AddLife() {

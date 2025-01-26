@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UsePowers : MonoBehaviour
 {
-    
+    /*
     private Animator animator;
-    //private bool isUsingPower = false;
+    private bool isUsingPower = false;
 
     private GameObject[] power;
     private int currentPower = 0;
@@ -14,6 +14,8 @@ public class UsePowers : MonoBehaviour
 
     void Start()
     {
+        isUsingPower = false;
+        isUsingPower = InputManager.instance.isUsingPower;
         animator = GetComponent<Animator>();
         power = new GameObject[transform.childCount];
         foreach (Transform child in transform)
@@ -32,7 +34,7 @@ public class UsePowers : MonoBehaviour
     {
             if(InputManager.instance.isUsingPower)
             {
-                Debug.Log("Power");
+                Debug.Log("Power" + isUsingPower);
                 StartCoroutine(UsePower());
             }
         
@@ -57,5 +59,5 @@ public class UsePowers : MonoBehaviour
             power[currentPower].SetActive(true);
         }
         
-    }
+    }*/
 }

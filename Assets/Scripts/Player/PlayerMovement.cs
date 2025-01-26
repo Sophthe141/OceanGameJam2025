@@ -35,10 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (DialogueManager.instance.dialogueIsPlaying || PauseSystem.GameIsPaused)
+        if ( PauseSystem.GameIsPaused || Life.isDead)
         {
+            Debug.Log("Player is dead");    
             totalMovement = Vector2.zero;
-            rb.velocity = Vector2.zero;
+            rb.velocity = new Vector2(0, -1);
             animator.SetFloat("Speed", 0);
             return;
         }
