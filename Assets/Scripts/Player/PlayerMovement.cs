@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if ( PauseSystem.GameIsPaused || Life.isDead)
         {
-            Debug.Log("Player is dead");    
+            
             totalMovement = Vector2.zero;
             rb.velocity = new Vector2(0, -1);
             animator.SetFloat("Speed", 0);

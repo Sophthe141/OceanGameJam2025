@@ -16,24 +16,12 @@ public class ObjectiveControl : MonoBehaviour
     void Start()
     {
       
-        
+        ObjectiveProgress = 0;
+        MaxProgress = 3;
         progressText.text = string.Format("Bolhas {0}/{1}", ObjectiveProgress, MaxProgress);
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void CleanChildren()
-    {
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            Transform child = transform.GetChild(i);
-           
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

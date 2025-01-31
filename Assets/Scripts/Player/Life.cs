@@ -19,6 +19,7 @@ public class Life : MonoBehaviour {
     public UnityEvent onPlayerDeath;
     void Start() {
         // Inicializar variáveis
+        isDead = false;
         currentLives = 3; // Carregue a vida do player do PlayerPrefs (ou defina um valor inicial)
 
         // Obter referências das imagens e adicioná-las à lista
@@ -50,6 +51,7 @@ public class Life : MonoBehaviour {
             onPlayerDeath.Invoke();
         }
     }
+
 
     public void AddLife() {
         currentLives = Mathf.Min(currentLives + 1, maxLives);
